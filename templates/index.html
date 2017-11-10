@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page to upplad files</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md5">
+
+                <form action="/upload" enctype="multipart/form-data" method="post">
+                    <div class="form-group">
+                        <label for="upladFile">Dodaj plik</label>
+                        <input type="file" class="form-control-file" name="plik" id="upladFile" multiple>
+                        <input type="submit">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

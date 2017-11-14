@@ -3,7 +3,7 @@ var formidable = require('formidable');
 var log = require("./error");
 
 function setExtension(file) {
-    var type = file.plik.type;
+    var type = file.upload.type;
     console.log(type);
     var exte;
     switch (type){

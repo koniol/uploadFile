@@ -31,7 +31,7 @@ exports.upload = function onReqest(req, res) {
         if(ext !== "unknown"){
             var d = new Date();
             var time = d.getTime();
-            fs.renameSync(file.plik.path, time+ext);
+            fs.renameSync(file.upload.path, time+ext);
             res.writeHead(200, {"Content-Type": "text/html"});
             res.write("received image:<br/>");
             res.write("<img src='/show' />");
